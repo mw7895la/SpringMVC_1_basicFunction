@@ -88,7 +88,7 @@ public class RequestParamController {
     }
     //log.info의 치환문자 형식에 대해서...
     //형식 지정자를 따로 사용하지 않아도 로거 문구가 알아서 잘 생성되는 이유는 toString()메소드를 이용해 모든 파라미터를 String 형으로 바꿔주기 때문입니다. (MessageFormatter.safeObjectAppend 참고!)
-    //파라미터에 String 타입이 아닌 Map이나 다른 객체가 들어와도 에러가 나지 않는 이유는 모든 Object는 toString() 메서드를 가지고 있기 때문이죠
+    //파라미터에 String 타입이 아닌 Map이나 다른 객체가 들어와도 에러가 나지 않는 이유는 모든 Object는 toString() 메서드를 가지고 있기 때문.
 
 
     @ResponseBody
