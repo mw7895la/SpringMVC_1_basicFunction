@@ -32,6 +32,8 @@ public class RequestBodyJsonController {
 
         log.info("messageBody={}", messageBody);
         HelloData helloData = objectMapper.readValue(messageBody, HelloData.class);//messageBody를 HelloData 클래스 타입으로
+        //ObjectMapper란?
+        //JSON 컨텐츠를 Java 객체로 deserialization 하거나 Java 객체를 JSON으로 serialization 할 때 사용하는 Jackson 라이브러리의 클래스이다.
         log.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
 
         response.getWriter().write("ok");
