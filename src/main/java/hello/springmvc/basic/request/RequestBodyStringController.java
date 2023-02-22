@@ -70,6 +70,13 @@ public class RequestBodyStringController {
     }
     //v1 - v2 - v3 - v3-1 도 귀찮아
 
+
+    /**
+     * @RequestBody 요청
+     * JSON 요청 HTTP 메시지 컨버터 객체
+     * @ResponseBody 응답
+     * 객체 HTTP 메시지 컨버터 JSON 응답
+     */
     @ResponseBody
     @PostMapping("/request-body-string-v4")
     public String requestBodyStringV4(@RequestBody String messageBody){

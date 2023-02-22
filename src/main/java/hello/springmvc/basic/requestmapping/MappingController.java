@@ -94,7 +94,7 @@ public class MappingController {
      */
     //컨텐트 타입에 따라 분리할 수 있다.      //text/html 등등..
     @PostMapping(value="/mapping-consume",consumes= MediaType.APPLICATION_JSON_VALUE) //헤더에 컨텐트 타입이 JSON인 경우에만 호출된다.
-    //consumes 은 서버입장을 기준으로 클라이언트가 보낸것이 요청헤더의 컨텐트 타입이 위의 consumes로 들어온 경우만 처리해준다.   
+    //consumes 은 서버입장을 기준으로 클라이언트가 보낸것이 요청헤더의 "컨텐트 타입"이 위의 consumes로 들어온 경우만 처리해준다.
     public String mappingConsumes(){
         log.info("mappingConsumes");
         return "ok";
