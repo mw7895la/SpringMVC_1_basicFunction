@@ -92,7 +92,7 @@ public class RequestParamController {
 
 
     @ResponseBody
-    @RequestMapping("/model-attribute-v1")                  //@ModelAttribute 특정 네임을 정하지 않으면  HelloData 클래스의 앞부분 소문자로 한 -> helloData을 이름으로 요청된 파라미터 값들 바인딩 후 model.addAttribute("HelloData",helloData)으로 담긴다
+    @RequestMapping("/model-attribute-v1")                  //@ModelAttribute 특정 네임을 정하지 않으면  HelloData 클래스의 앞부분 소문자로 한 -> helloData을 이름으로 요청된 파라미터 값들 바인딩 후 model.addAttribute("helloData",helloData)으로 담긴다
     public String modelAttributeV1(/*@RequestParam String username, @RequestParam int age*/ @ModelAttribute HelloData helloData){
         /*HelloData helloData =new HelloData();
         helloData.setUsername(username);
